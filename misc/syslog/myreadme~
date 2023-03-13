@@ -1,0 +1,15 @@
+https://c.happycodings.com/gnu-linux/code21.html
+https://linuxhandbook.com/syslog-guide/
+
+https://www.loggly.com/ultimate-guide/centralizing-with-syslog/
+systemd journald config
+ls -l /etc/systemd/journald.conf
+
+systemd syslog config
+ls -l /etc/rsyslog.conf
+
+import data from journald into syslog. This module is called imjournal.
+
+application exmp:
+./a.out
+cat /var/log/syslog

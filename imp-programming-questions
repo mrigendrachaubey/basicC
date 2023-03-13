@@ -1,0 +1,20 @@
+https://www.careercup.com/question?id=2777
+
+https://www.careercup.com/page?pid=nvidia-interview-questions
+https://www.careercup.com/page?pid=qualcomm-interview-questions
+https://embeddedartistry.com/blog/2017/02/22/generating-aligned-memory/
+some questions:
+1. Write an aligned malloc & free function. Which takes number of bytes and aligned byte (which is always power of 2)
+
+
+2. Given an array of elements print even and odd numbers out of it using 2 threads . even_thread and odd_thread.
+int arr[] = {3,1 ,2, 5, 6, 7, 8, 10, 9};
+3. Implement your own sizeof operator using bitwise operation 
+4. General questions about linked lists, binary trees, arrays, heaps ...advantages, disadvantages, complexties, differences between each.
+5. Write a function which uses malloc and returns a starting memory location which is a multiple of 32.
+6. What is a reentrant function? how do you make a function non-reentrant?
+7. Write a code to clear nth bit in an integer.
+8. Writing a C code to find the endianness of a computer.
+9. Find the size of the array 
+10. write a c code to reverse the bits in a uint8 type variable.
+11. difference between array and pointer

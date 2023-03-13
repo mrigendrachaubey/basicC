@@ -1,0 +1,100 @@
+Data structures:
+================
+
+Single linked list:sll
+----------------------
+
+sll_onlyhead.c			: Only create head
+sll_3nodes.c			: Create 3 nodes
+sll_add_delete.c		: Add and delete nodes
+
+double linked list:dll
+----------------------------
+dll_onlyhead.c			: Only create head
+dll_3nodes.c			: Create 3 nodes
+dll_add_delete.c		: Add and delete nodes
+
+Circular linked list: cll
+------------------------------
+cll_onlyhead.c			: Only create head
+cll_3nodes.c		        : Create 3 nodes
+cll_add_delete.c		: Add and delete nodes
+
+
+stack:
+---------
+ds_stack.c                     : Create a stack by updating top on linked list nodes.
+
+
+queue:
+----------
+ds_queue.c                     : create a queue, by updating rear on linked list nodes.
+
+
+C basic and corner cases programs
+=================================
+
+bitwise:
+----------
+1. dec_bin.c					: decimal to binary conversion and vice versa.
+2. mask_bit.c					: masking particular bits.
+3. shift_exp.c 				: shift operator on signed and unsigned integers.:
+4. bit_operator.c			        : and, or, and exor properties and usage.:
+
+
+array:
+--------
+1. 2d_array.c					: create a 2d array with pointer
+2. 3d_array.c					: create a 3d array with pointer
+3. array_as_p.c				: pass an array as a pointer
+4. stack_array.c				: stack is first in last out with functions push, pop controlled by observing top
+5. queue_array.c			        : queue is first in last out with functions enqueue, dequeue controlled by front and rear
+
+
+string:
+-------
+
+malloc calloc realloc:
+-----------------------------
+
+attributes:
+--------------
+
+sizeof operator:
+----------------------
+
+pointer decomposition:
+--------------------------------
+ptr_dec_array.c
+ptr_dec_string.c
+ptr_dec_2darr.c
+
+structure and pointer:
+--------------------------
+
+
+mmap, munmap, shm, memfd_create:
+-----------------------------------------------
+
+fopen, fwrite, fread, fcntl:
+-------------------------------
+
+open, write, read:
+---------------------
+
+
+getopt, syslog:
+------------------
+
+alarm, settimer, signaction:
+----------------------------------
+
+exec, wait, pipe,mkfifo:
+----------------------------
+
+semaphore, socket:
+------------------------
+
+gdb:
+-----
+

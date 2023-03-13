@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int arr[10];
+int top = 0;
+
+void push(int value)
+{
+        if(top != -1)
+        {
+                arr[top] = value;
+                top = top+1;
+        }
+}
+
+void pop()
+{
+        if (top == -1)
+                printf("array is empty\n");
+        else
+        {        
+                arr[top] = 0;
+                top = top-1;
+        }
+}
+
+void show()
+{
+        int i;
+        for(i = top-1; i >= 0 ; i--)
+                printf("%d ", arr[i]);
+
+        printf("\n");
+}
+int main()
+{
+        push(2);
+        push(4);
+        push(11);
+        push(3);
+        show();
+        pop();
+        show();
+        return 0;
+}

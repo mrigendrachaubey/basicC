@@ -1,0 +1,10 @@
+
+linker script is to describe how the sections in the input files should be mapped into the output file, and to control the memory layout of the output file.
+
+https://interrupt.memfault.com/blog/how-to-write-linker-scripts-for-firmware
+https://www.geeksforgeeks.org/memory-layout-of-c-program/
+https://home.cs.colorado.edu/~main/cs1300/doc/gnu/ld_3.html
+https://www.geeksforgeeks.org/linker/
+
+Source code -> compiler -> Assembler -> Object code -> Linker -> Executable file -> Loader
+

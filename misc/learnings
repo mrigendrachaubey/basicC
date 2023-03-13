@@ -1,0 +1,4 @@
+https://www.gnu.org/software/libc/manual/html_node/Memory_002dmapped-I_002fO.html#:~:text=The%20memfd_create%20function%20returns%20a,not%20backed%20by%20actual%20files.
+The memfd_create function returns a file descriptor which can be used to create memory mappings using the mmap function. It is similar to the shm_open function in the sense that these mappings are not backed by actual files. However, the descriptor returned by memfd_create does not correspond to a named object; the name argument is used for debugging purposes only (e.g., will appear in /proc), and separate invocations of memfd_create with the same name will not return descriptors for the same region of memory. The descriptor can also be used to create alias mappings within the same process.
+
+The descriptor initially refers to a zero-length file. Before mappings can be created which are backed by memory, the file size needs to be increased with the ftruncate function

@@ -1,0 +1,44 @@
+/* Relevant:
+http://lists.gnu.org/archive/html/bug-parted/2012-10/msg00018.html
+http://stackoverflow.com/questions/8416241/block-device-information-without-mounting-in-linux
+*/
+
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <linux/fs.h>
+#include <stdio.h>
+#include <sys/ioctl.h>
+
+#ifndef BLKGETSIZE
+#define BLKGETSIZE _IO(0x12,96)                   /* return device size */
+#endif
+
+#ifndef BLKPBSZGET
+#define BLKSSZGET  _IO(0x12,104)/* get block device sector size */
+#endif
+
+
+int main(int argc, char **argv)
+{
+	size_t size;
+	size_t logicalsectsize = 0;
+	int retval;
+
+	int fd = open("/dev/sdb", O_RDONLY | O_NONBLOCK);
+
+	if (ioctl(fd, BLKGETSIZE, &size) != 0)
+		size=0;
+
+	/*retval=ioctl(fd, BLKSSZGET, &logicalsectsize);*/
+	if (ioctl(fd, BLKSSZGET, &logicalsectsize) < 0)
+	{
+		printf("Can't get logical sector size. Return code: %d\n",retval);
+		logicalsectsize = 0;
+	}
+
+	printf("%ld %ld\n",size, logicalsectsize);
+
+	close(fd);
+	return 0;
+}
